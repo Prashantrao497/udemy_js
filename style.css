@@ -1,5 +1,5 @@
-*{
-    box-sizing:border-box ;
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -8,22 +8,21 @@
 body {
     display: flex;
     justify-content: center;
-    min-height: 100vh; 
+    min-height: 100vh;
     text-align: center;
     align-items: center;
     background: linear-gradient(to right, #2e1e4f, #4735ee);
-
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     background: rgba(113, 10, 154, 0.25);
-    box-shadow: 0px 8px 32px,0px rgba(31,38,135,0.37);
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
-    border-radius:10px;
-    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     transition: background 0.3s ease-in-out;
 }
 
@@ -36,28 +35,38 @@ body {
     color: #fff;
     margin: 2.5rem;
     min-width: 150px;
-    background: rgba(0, 255, 252, 0.5); 
-    box-shadow: 0px 8px 32px 0px rgba(31, 38, 135, 0.37); 
-    backdrop-filter: blur(2.5px); 
-    border-radius: 10px; 
+    background: rgba(0, 255, 252, 0.5);
+    box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: background 8.3s ease-in-out; 
+    transition: background 8.3s ease-in-out;
 }
 
 .key-container h4 {
-    position: absolute;
-    top: -2rem; 
-    left: 0;
+    position: relative;
+    top: -1rem;
     text-align: center;
     width: 100%;
+    color: white;
 }
 
-.key-content {
-    margin-top: 10px; 
+.key-content-animation {
+    margin-top: 10px;
+    background: #00f0f5;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    font-size: 24px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.key-content-animation.active {
+    transform: scale(1.1);
 }
 
 .container:hover {
-    background: rgba(255, 255, 255, 0.35); 
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .key-container:hover {
